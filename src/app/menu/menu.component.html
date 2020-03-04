@@ -1,0 +1,40 @@
+<div class="container"
+ fxLayout="column"
+ fxLayoutGap="10px">
+
+ <mat-list fxFlex>
+     <mat-list-item *ngFor="let dish of dishes">
+         <img matListAvtar src={{dish.image}} alt={{dish.name}}>
+         <h1 matLine>{{dish.name}}</h1>
+         <p matLine>
+             <span>{{dish.description}}</span>
+        </p>
+     </mat-list-item>
+ </mat-list>
+
+    <!-- <div fxFlex="40">
+          <figure>
+            <img src="\assets\images\uthappizza.png" alt="uthappizza">
+            <figcaption>UTTAPPIZZA</figcaption>
+        </figure>
+
+        <figure>
+            <img src="\assets\images\zucchipakoda.png" alt="zucchipakoda">
+            <figcaption>ZUCCHIPAKODA</figcaption>
+        </figure>
+    </div>
+
+    <div fxFlex="40">
+        <figure>
+            <img src="\assets\images\vadonut.png" alt="vadonut">
+            <figcaption>VADONUT</figcaption>
+        </figure>
+
+        <figure>
+            <img src="\assets\images\elaicheesecake.png" alt="elaicheesecake">
+            <figcaption>ELAICHEESECAKE</figcaption>
+        </figure>
+    </div> -->
+
+</div>
+<app-dishdetail></app-dishdetail>
